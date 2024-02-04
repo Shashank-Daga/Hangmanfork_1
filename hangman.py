@@ -58,7 +58,7 @@ Label(window, textvariable  =lblWord,font=('consolas 24 bold')).grid(row=0, colu
 
 n=0
 for c in ascii_uppercase:
-    Button(window, text=c, command=lambda c=c: guess(c), font=('Helvetica 18'), width=4).grid(row=1+n//9,column=n%9)
+    Button(window, text=c, command=lambda c: guess(c), font=('Helvetica 18'), width=4).grid(row=1+n//9,column=n%9)
     n+=1
 
 Button(window, text="New\nGame", command=lambda:newGame(), font=("Helvetica 10 bold")).grid(row=3, column=8)
